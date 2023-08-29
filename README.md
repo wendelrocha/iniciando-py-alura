@@ -84,6 +84,8 @@ Exemplos:
 >>> type(mes)
 <class 'float'>
 
+Também existe o tipo bool (true or false)
+
 Snake_Case
 
 Padrão/convenção pra definição nomes de variáveis, usando o simbolo de underline (_) para separar as palavras
@@ -130,6 +132,10 @@ if(num_secreto == chute):
     print("Você acertou. ")
 else:
     print("Você errou. ")
+
+Também encontrado na forma sem parênteses, pois o Python aceita ambas as formas. 
+Seguir a forma que usa parênteses, pois deixa mais claro qual é a condição, 
+principalmente quando há várias condições a avaliar através das operações lógicas AND ou OR.
 
 # Somar string com int
 
@@ -199,4 +205,67 @@ Essa ferramenta é uma interface de linha de comando mais geral que permite exec
 # Config. UTF-8 no VS Code
 
 UTF-8 é um formato de codificação que permite que caracteres especiais e acentos sejam exibidos corretamente ao digitar no editor de códigos.
+
+03. Testando Valores
+
+A condição elif
+
+Em alguns casos casos, para forçar testar uma condução no senão (else), podemos fazer um else com uma condição de entrada, o elif. 
+Vamos utilizá-lo para deixar o código mais semântico, já que na prática não há diferença:
+
+if (numero_secreto == chute):
+    print("Você acertou!")
+else:
+    if (chute > numero_secreto):
+        print("Você errou! O seu chute foi maior que o número secreto.")
+    elif (chute < numero_secreto):
+        print("Você errou! O seu chute foi menor que o número secreto.")
+
+Código limpo
+
+Usando variáveis (valores testados) ao invés de usar nas variáveis.
+
+acertou = chute == num_secreto 
+maior = chute > num_secreto 
+menor = chute < num_secreto
+
+acertou = chute == numero_secreto
+maior = chute > numero_secreto
+menor = chute < numero_secreto
+
+if (acertou):
+    print("Você acertou!")
+else:
+    if (maior):
+        print("Você errou! O seu chute foi maior que o número secreto.")
+    elif (menor):
+        print("Você errou! O seu chute foi menor que o número secreto.")
+
+Usando elif com operadores de comparação
+
+Saiba, que além do == (igualdade), > (maior) e < (menor), 
+também temos >= (maior ou igual), <= (menor ou igual) e != (diferente)
+
+idade_str = input("Digite sua idade: ")
+idade = int(idade_str)
+
+if (idade >= 18):
+    print("Você é maior de idade.")
+else:
+    if (idade <= 12):
+        print("Você é uma criança.")
+    elif (idade >= 13):
+        print("Você é um adolescente.")
+
+Variável do tipo boleana 
+
+A variável acertou é do tipo bool.
+Uma variável do tipo bool pode ter apenas dois valores, True ou False, que podemos usar diretamente:
+
+passou = True
+errou = False
+
+Exemplo prático: 
+acertou = chute == num_secreto 
+print("O tipo da variável -acertou- é : ", type(acertou))
 

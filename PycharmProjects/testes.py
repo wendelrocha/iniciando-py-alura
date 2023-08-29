@@ -30,9 +30,62 @@ idade2 = int("20")
 print(idade1 + idade2)"""
 
 # Concatenando strings
+
 """nome = "Nico"
 sobrenome = "Steppat"
 #print(nome,sobrenome)
 print(nome,sobrenome, sep="_")
-#print(nome + " " + sobrenome)""
+#print(nome + " " + sobrenome)"""
+
+## Usando o elif c/ lógica errada
+
+##idade_str = input("Digite sua idade: ")
+##idade = int(idade_str)
+
+##if (idade > 18):
+##    print("Você é maior de idade.")
+##else:
+##    if (idade < 12):
+##        print("Você é uma criança.")
+##    elif (idade > 12):
+##        print("Você é um adolescente.")"""
+
+## Usando o elif corretamente c/ operadores de comparação
+
+"""idade_str = input("Digite sua idade: ")
+idade = int(idade_str)
+
+if (idade >= 18):
+    print("Você é maior de idade.")
+else:
+    if (idade <= 12):
+        print("Você é uma criança.")
+    elif (idade >= 13):
+        print("Você é um adolescente.")"""
+
+## Corrigir o código
+
+##usuario = input("Informe o usuário do sistema!")
+
+##if(usuario == "Flávio"):
+##    print("Seja bem-vindo Flávio!")
+##else(usuario == "Douglas"):
+##    print("Seja bem-vindo Douglas!")
+##else(usuario == "Nico"):
+##    print("Seja bem-vindo Nico")
+##else:
+##    print("Usuário não identificado!")
+
+## código correto
+
+"""usuario = input("Informe o usuário do sistema: ")
+
+if(usuario == "Flávio"):
+    print("Seja bem-vindo Flávio!")
+elif (usuario == "Douglas"):
+    print("Seja bem-vindo Douglas!")
+elif(usuario == "Nico"):
+    print("Seja bem-vindo Nico")
+else:
+    print("Usuário não identificado!")"""
 
