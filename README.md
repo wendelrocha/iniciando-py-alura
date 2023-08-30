@@ -10,14 +10,14 @@ Pode usar sem instalar (testes básicos) na plataforma https://replit.com/langua
 
 ### Funções e Variáveis
 
-**Funções**
+- Funções
 
 Uma função sempre terá um parenteses depois de seu nome
     
 função print(paramentros)
 função help(parametros)
 
-Exemplos
+- Exemplos
     
     help(print)
 
@@ -44,7 +44,7 @@ Lembrando que o \n é um caractere especial, que faz com que o novo prompt (curs
     print(pais, "ganhou", ntitulos, "copas", "do", "mundo",sep=" ",end="!\n") 
     italia ganhou 4 copas do mundo!
 
-Outro exemplo usando variáveis
+- Outro exemplo usando variáveis:
 
     dia = 15
     mes = 10
@@ -53,7 +53,7 @@ Outro exemplo usando variáveis
     print(dia,mes,ano,sep="/")
     15/10/2015
 
--- Tipagem do Python
+### Tipagem do Python
 
 Uma variável só passa a existir quando atribuímos um valor.
 Mesmo se declaramos o tipo e o nome da variável, sem ter atribuído o valor.
