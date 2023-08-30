@@ -1,5 +1,5 @@
-Alura, Nico Steppat
-Python: começando com a linguagem Python
+# Anotações do curso começando com a linguagem Python
+# Alura, Nico Steppat
 
 ## 01. Instalação do Python3
 
