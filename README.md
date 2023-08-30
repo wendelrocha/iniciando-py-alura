@@ -111,7 +111,7 @@ Neste caos, não se separam as palavras na variável.
     perfilVip = 'Flávio Almeida'
     recibosEmAtraso = 30
 
-## 02. idando com a entrada do usuário
+## 02. Lidando com a entrada do usuário
 
 ### Escolhendo a IDE (Integrated Development Environment)
 
@@ -323,4 +323,4 @@ Usammos {} para substituir por variáveis.
 
 *Exemplo:*
 
-    print("Rodada {} de {} : " .format(rodada, total_tentativas))
+    `print("Rodada {} de {} : " .format(rodada, total_tentativas))`
