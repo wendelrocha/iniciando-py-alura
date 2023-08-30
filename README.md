@@ -2,15 +2,17 @@ Alura, Nico Steppat
 Python: começando com a linguagem Python
 
 # 01. Instalação do Python3
+## 01. Instalação do Python3
+## 01. Instalação do Python3
 
-* Instalar python3
+**Instalar python3**
 
 Existe para Windows, Mac e Linux
 Pode usar sem instalar (testes básicos) na plataforma https://replit.com/languages/python3
 
-- Funções e Variáveis 
+**Funções e Variáveis**
 
-- Funções 
+**Funções**
 
 Uma função sempre terá um parenteses depois de seu nome
     
