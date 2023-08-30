@@ -1,5 +1,7 @@
-# Anotações do curso começando com a linguagem Python
+# Curso começando com a linguagem Python
 # Alura, Nico Steppat
+
+Este repositório contém minhas anotações pessoais durante a jornada do curso. 
 
 ## 01. Instalação do Python3
 
