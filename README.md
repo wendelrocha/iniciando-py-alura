@@ -323,4 +323,4 @@ Usammos {} para substituir por variáveis.
 
 *Exemplo:*
 
-    `print("Rodada {} de {} : " .format(rodada, total_tentativas))`
+`print("Rodada {} de {} : " .format(rodada, total_tentativas))`
