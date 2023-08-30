@@ -319,8 +319,8 @@ O interessante é que o Python não possui um laço com uma condição de saída
 
 ## Formatação de strings
 
-Usammos {} para substituir por variáveis. 
+Usamos {} para substituir por variáveis. 
 
 *Exemplo:*
 
-`print("Rodada {} de {} : " .format(rodada, total_tentativas))`
+    print("Rodada {} de {} : " .format(rodada, total_tentativas))
