@@ -3,55 +3,55 @@ Python: começando com a linguagem Python
 
 # Instalação do Python3
 
--- Instalar python3
+- Instalar python3
 
 Existe para Windows, Mac e Linux
 Pode usar sem instalar (testes básicos) na plataforma https://replit.com/languages/python3
 
--- Funções e Variáveis 
+- Funções e Variáveis 
 
 - Funções 
 
 Uma função sempre terá um parenteses depois de seu nome
     
+função print(paramentros)
+função help(parametros)
+
 Exemplos
+    
+    help(print)
 
-    função print(paramentros)
-    função help(parametros)
+    print("Brasil ganhou 5 copas do mundo")  
+    Brasil ganhou 5 copas do mundo
 
-help(print)
+    print("Brasil", "ganhou", 5, "copas do mundo", sep="-") 
+    Brasil-ganhou-5-copas do mundo
 
-print("Brasil ganhou 5 copas do mundo")  
-Brasil ganhou 5 copas do mundo
+    print("Brasil", "ganhou", 5, "copas", "do", "mundo", sep="-") 
+    Brasil-ganhou-5-copas-do-mundo
 
-print("Brasil", "ganhou", 5, "copas do mundo", sep="-") 
-Brasil-ganhou-5-copas do mundo
+    pais="italia"
+    ntitulos=4
 
-print("Brasil", "ganhou", 5, "copas", "do", "mundo", sep="-") 
-Brasil-ganhou-5-copas-do-mundo
+    type(pais)
+    <class 'str'>
 
->> pais="italia"
-ntitulos=4
+    type(ntitulos)
+    <class 'int'>
 
-type(pais)
-<class 'str'>
+Lembrando que o \n é um caractere especial, que faz com que o novo prompt (cursor) comece em uma nova linha.
 
-type(ntitulos)
-<class 'int'>
-
-Lembrando que o \n é um caractere especial, que faz com que o novo prompt comece em uma nova linha.
-
-print(pais, "ganhou", ntitulos, "copas", "do", "mundo",sep=" ",end="!\n") 
-italia ganhou 4 copas do mundo!
+    print(pais, "ganhou", ntitulos, "copas", "do", "mundo",sep=" ",end="!\n") 
+    italia ganhou 4 copas do mundo!
 
 Outro exemplo usando variáveis
 
-dia = 15
-mes = 10
-ano = 2015
+    dia = 15
+    mes = 10
+    ano = 2015
 
-print(dia,mes,ano,sep="/")
-15/10/2015
+    print(dia,mes,ano,sep="/")
+    15/10/2015
 
 -- Tipagem do Python
 
@@ -59,30 +59,30 @@ Uma variável só passa a existir quando atribuímos um valor.
 Mesmo se declaramos o tipo e o nome da variável, sem ter atribuído o valor.
 Em Python, a variável só passa a existir quando atribuímos um valor, como no exemplo abaixo:
 
-int idade;
+    int idade;
 
-    declarou apenas o nome e a tipagem da variável
+Veja que foi declarado apenas o nome e a tipagem da variável
 
 idade = 12
 
-    Após atribuir valor, a variável passa a existir
+Após atribuir valor, a variável passa a existir
 
-Exemplos: 
+Exemplos:
 
-mes="ago"
+    mes="ago"
 
-type(mes)
-<class 'str'>
+    type(mes)
+    <class 'str'>
 
-mes=8
+    mes=8
 
-type(mes)
-<class 'int'>
+    type(mes)
+    <class 'int'>
 
-mes=8.9
+    mes=8.9
 
-type(mes)
-<class 'float'>
+    type(mes)
+    <class 'float'>
 
 Também existe o tipo bool (true or false)
 
@@ -92,25 +92,27 @@ Padrão/convenção pra definição nomes de variáveis, usando o simbolo de und
 
 Exemplo
 
-idade_esposa = 20
-perfil_vip = 'Flávio Almeida'
-recibos_em_atraso = 30
+    idade_esposa = 20
+    perfil_vip = 'Flávio Almeida'
+    recibos_em_atraso = 30
 
 Em outras linguagens usa-se o padrão CamelCase, que não é o padrão do Python, mas pode ser usado tbm no Python.
 Neste caos, não se separam as palavras na variável. 
 
 Exemplo:
 
-idadeEsposa = 20
-perfilVip = 'Flávio Almeida'
-recibosEmAtraso = 30
+    idadeEsposa = 20
+    perfilVip = 'Flávio Almeida'
+    recibosEmAtraso = 30
 
 # Lidando com a entrada do usuário
 
 Escolhendo a IDE (Integrated Development Environment) 
-O PyCharm é uma IDE voltada exclusivamente para o Python. 
 
+O PyCharm é uma IDE voltada exclusivamente para o Python. 
 https://www.jetbrains.com/pycharm/ usar versão community
+
+Outra opção bastante popular é o VS Code. 
 
 Executar primeiro projeto: JOGO DA ADIVINHAÇÃO
 
