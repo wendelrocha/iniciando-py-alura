@@ -424,6 +424,8 @@ Além de variáveis, podemos passar também de funções e métodos:
 
 *Módulos (bibliotecas) Python para funções*
 
+***Módulo random*** - https://docs.python.org/3/library/random.html#module-random
+
 As funções que não são built-in no Python, devem ser carregadas para funcionar através de módulos.
 O módulo random traz várias funções para a finalidade de gerar números aleatórios. 
 
@@ -434,5 +436,12 @@ O módulo random traz várias funções para a finalidade de gerar números alea
     aleatorio = random.randrange(1, 101) # cria um numero aleatorio entre 1 e 100, sem necessidade de arredondar ou remover decimais. 
     aleatorio=random.randrange(10) # cria um número aleatorio entre 0 e 9.
 
+Os aleatórios gerados são na verdade  Pseudo-Random!
+Por padrão o Python usa a hora (os milissegundos) como semente (seed), 
+mas nada nos impede de definir o mesmo seed antecipadamente. Para isso, existe a função seed!
 
+    aleatorio=random.seed(100) # usando seed 100 o resultado sempre sera 19.
+    aleatorio=random.randrange(1,101)
+    print(aleatorio)
+    19
 
