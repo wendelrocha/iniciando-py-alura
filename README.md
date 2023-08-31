@@ -440,8 +440,8 @@ Os aleatórios gerados são na verdade  Pseudo-Random!
 Por padrão o Python usa a hora (os milissegundos) como semente (seed), 
 mas nada nos impede de definir o mesmo seed antecipadamente. Para isso, existe a função seed!
 
-    aleatorio=random.seed(100) # usando seed 100 o resultado sempre sera 19.
+    aleatorio=random.seed(100)
     aleatorio=random.randrange(1,101)
     print(aleatorio)
-    19
+    19  # usando seed 100 o resultado sempre sera 19.
 

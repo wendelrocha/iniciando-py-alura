@@ -115,6 +115,7 @@ for contador in range(1,11,3):
 
 """import random
 aleatorio = int(random.random() * 101); # multiplicando 1 * 101 será 101 e não 100 como maior valor?
+                                NÃO, porque é menor que 1, então jamais existirá 1 * 101, no máximo 0,9999999 * 101
 print(aleatorio)"""
 
 """Correto! A função random.random() sempre nos retorna um número entre 0.0 e algum valor menor 1.0, 
