@@ -2,6 +2,7 @@
 # Alura, Nico Steppat
 
 Este repositório contém minhas anotações pessoais durante a jornada do curso. 
+Referência oficial: https://docs.python.org/
 
 ## 01. Instalação do Python3
 
@@ -414,4 +415,24 @@ Além de variáveis, podemos passar também de funções e métodos:
     nome = 'Matheus'
     print(f'Meu nome é {nome.lower()}')
     Meu nome é matheus
+
+## 06. Gerando números aleatórios
+
+*Funções built-in* - https://docs.python.org/3.10/library/functions.html
+
+    print(), input(), help(), range(), format(),round() etc. 
+
+*Módulos (bibliotecas) Python para funções*
+
+As funções que não são built-in no Python, devem ser carregadas para funcionar através de módulos.
+O módulo random traz várias funções para a finalidade de gerar números aleatórios. 
+
+    import random
+
+    aleatorio = random.random() # cria um número (float) aleatório entre 0 e 1
+    aleatorio = round(random.random() * 100) # cria um número (float) aleatório entre zero e cem, depois arredonda.
+    aleatorio = random.randrange(1, 101) # cria um numero aleatorio entre 1 e 100, sem necessidade de arredondar ou remover decimais. 
+    aleatorio=random.randrange(10) # cria um número aleatorio entre 0 e 9.
+
+
 

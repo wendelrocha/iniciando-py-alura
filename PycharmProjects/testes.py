@@ -109,4 +109,31 @@ for contador in range(1,11,3):
 
 # Trocando a posição de strings
 
-print("Tentativa {1} de {0}".format("Cordeiro","Leonardo"))
+"""print("Tentativa {1} de {0}".format("Cordeiro","Leonardo"))"""
+
+# DUVIDA
+
+"""import random
+aleatorio = int(random.random() * 101); # multiplicando 1 * 101 será 101 e não 100 como maior valor?
+print(aleatorio)"""
+
+"""Correto! A função random.random() sempre nos retorna um número entre 0.0 e algum valor menor 1.0, 
+multiplicando por 101 obteremos um número entre 0.0 e algum valor menor de 100.0. 
+A função int() faz o trabalho de cortar as partes decimais deste número e obtemos o que queremos!"""
+
+## Sorteio livros entre 3 alunos
+
+"""import random
+
+sorteado = random.randrange(0,4)
+
+print(sorteado)
+
+if sorteado == 1:
+    print( "Paulo")
+elif sorteado == 2:
+    print("Juliana")
+else:
+    print("Tamires") # neste caso como não há elif sorteado igual a 3 associado a Tamires, seria injusto. """
+
+
