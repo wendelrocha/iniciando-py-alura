@@ -1,4 +1,4 @@
-# Curso começando com a linguagem Python
+# Curso: Python começando com a linguagem
 # Alura, Nico Steppat
 
 Este repositório contém minhas anotações pessoais durante a jornada do curso. 
@@ -317,10 +317,101 @@ Quando queremos escrever o nosso código apenas uma vez, e repeti-lo, faremos um
 Ambos, if e while, possuem uma condição de entrada. A diferença é que o if executa o bloco apenas uma vez, mas o while repete o bloco enquanto a condição for verdadeira.
 O interessante é que o Python não possui um laço com uma condição de saída, que outras linguagens chamam de do-while.
 
-## Formatação de strings
+### Formatação de strings
 
 Usamos {} para substituir por variáveis. 
 
 *Exemplo:*
 
     print("Rodada {} de {} : " .format(rodada, total_tentativas))
+
+## 05. Iterando de maneira diferente
+
+### O laço com FOR (outro tipo de loop)
+
+Executa as ações até que uma condição dentro de um escopo definido pela função range() seja atingida
+
+A função range possui os seguintes parâmetros:
+range(start, stop, step)
+
+*Exemplos:*
+
+    for rodada in range(1,10):
+        print(rodada)
+
+No exemplo, acima o escopo (range) é 1 até 10, sendo que o último número não conta, então ele imprime a variável rodada de 1 até 9. 
+
+    for rodada in range(1,100,10):
+
+No exemplo, acima o escopo (range) é 1 até 100, variando de 10 em 10, então ele imprime a variável rodada de 1 até 91, fazendo incrementos de 10 em 10. 
+
+### Encerrando a iteração e o loop
+
+Para realizar o controle de fluxo (control flow), usamos algumas palavras-chave. 
+
+A palavra-chave break, faz com que saiamos do laço. 
+
+    if (acertou):
+        print("Você acertou!")
+        break
+
+Quando há uma condição que é atendida mas não queremos sair do laço, usamos outra palavra-chave: continue
+
+    if (chute < 1 or chute > 100):
+        print("Você deve digitar um número entre 1 e 100!")
+        continue
+
+### Mais sobre formatação de strings
+
+https://docs.python.org/3/library/string.html#formatexamples
+
+*Formatando strings*
+
+    print("Tentativa {} de {}".format(3,10))
+Tentativa 3 de 10
+    print("Tentativa {1} de {0}".format(3,10))
+Tentativa 10 de 3 (neste caso ele inverte os valores a serem substituídos, colocando a posição zero no segundo parâmetro e a posição um no primeiro parâmetro)
+
+*Formatando números floats*
+
+    print("R$ {:f}".format(1.59))
+    R$ 1.590000
+    print("R$ {:7.2f}".format(1.59))
+    R$    1.59
+    print("R$ {:07.2f}".format(1.59))
+    R$ 0001.59
+    print("R$ {:07.2f}".format(1548.59))
+    R$ 1548.59
+    
+*Formatando números inteiros*
+
+    print("Data {:02d}/{:02d}".format(5,9))
+    Data 05/09
+
+### Interpolação - Python 2 vs Python 3
+
+Python 3 
+
+    "{} {}".format(1, 2)
+
+Python 2
+
+    "%d %d" % (1, 2)
+
+Mais exemplos comparando o Python 2 com Python 3: https://pyformat.info/
+
+No Python 3.6+, existe um novo recurso para realizar a interpolação de strings. 
+Esse recurso é chamado de f-strings ou formatted string literals.
+
+    nome = 'Matheus'
+    print(f'Meu nome é {nome}')
+    Meu nome é Matheus
+
+Com a letra f antes das aspas, é uma f-string. 
+Em tempo de execução, captar a expressão que está entre chaves ({ }) e avaliá-la.
+Além de variáveis, podemos passar também de funções e métodos:
+
+    nome = 'Matheus'
+    print(f'Meu nome é {nome.lower()}')
+    Meu nome é matheus
+

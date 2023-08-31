@@ -101,4 +101,12 @@ ano = 2017
 #print("Em" ano, "o carnaval acontece em", mes, "do dia", dia_ini, "até o dia", dia_fim)
 print("Em {} o carnaval acontece em {} do dia {} até o dia {}.".format(ano,mes,dia_ini,dia_fim))"""
 
-# 
+# Usando laços com for 
+
+"""contador = 1 
+for contador in range(1,11,3):
+    print(contador)"""
+
+# Trocando a posição de strings
+
+print("Tentativa {1} de {0}".format("Cordeiro","Leonardo"))
