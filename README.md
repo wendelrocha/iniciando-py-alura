@@ -578,7 +578,9 @@ Para ser executado não é simplesmente só enviar o arquivo compilado/executado
 
 O que é o __pycache__
 
+"Python é uma linguagem interpretada, em oposição às compiladas, embora a distinção possa ficar desfocada devido à presença do compilador de bytecode."
+
 É como se fossem os arquivos "compilados" em tempo de execução para que possa ser executado (compilando os módulos) de forma mais rápida. 
 Porém, o Python é meio que hibrida, pois usa esses arquivos sempre que necessário para melhorar o desempenho.
 
-
+"O código fonte é automaticamente compilado para bytecode do Python pelo interpretador CPython. O código compilado é comumente armazenado nos arquivos no PYC (ou PYO), sendo regerado quando o arquivo fonte é atualizado ou quando é necessário."
