@@ -137,4 +137,8 @@ elif sorteado == 2:
 else:
     print("Tamires") # neste caso como não há elif sorteado igual a 3 associado a Tamires, seria injusto. """
 
+# Usando a função abs
+
+pontos_perdidos = (21 - 32) / 3
+print("Pontos perdidos: {:7.2f}".format(pontos_perdidos))
 

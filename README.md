@@ -373,13 +373,13 @@ Tentativa 3 de 10
     print("Tentativa {1} de {0}".format(3,10))
 Tentativa 10 de 3 (neste caso ele inverte os valores a serem substituídos, colocando a posição zero no segundo parâmetro e a posição um no primeiro parâmetro)
 
-*Formatando números floats*
+*Interpolando números floats*
 
     print("R$ {:f}".format(1.59))
     R$ 1.590000
-    print("R$ {:7.2f}".format(1.59))
+    print("R$ {:7.2f}".format(1.59)) # remove os zeros (considerando 7 caracteres) e apresenta apenas duas casas decimais depis do ponto
     R$    1.59
-    print("R$ {:07.2f}".format(1.59))
+    print("R$ {:07.2f}".format(1.59)) # inlui os zeros nos espaços vazios (considerando 7 caracteres) e apresenta apenas duas casas decimais depis do ponto
     R$ 0001.59
     print("R$ {:07.2f}".format(1548.59))
     R$ 1548.59
@@ -444,4 +444,65 @@ mas nada nos impede de definir o mesmo seed antecipadamente. Para isso, existe a
     aleatorio=random.randrange(1,101)
     print(aleatorio)
     19  # usando seed 100 o resultado sempre sera 19.
+
+## 07. Nível e Pontuação
+
+### Atribuindo valores dinâmicos a variáveis
+
+    import random
+
+    numero_secreto = random.randrange(1, 101)
+    total_de_tentativas = 0
+
+    print("Qual o nível de dificuldade?")
+    print("(1) Fácil (2) Médio (3) Difícil")
+
+    nivel = int(input("Defina o nível: "))
+
+    if (nivel == 1):
+        total_de_tentativas = 20
+    elif (nivel == 2):
+        total_de_tentativas = 10
+    else:
+        total_de_tentativas = 5
+
+    # resto do código comentado
+
+### Usando mais um função built-in
+
+*Função abs*
+
+    pontos_perdidos = abs(numero_secreto - chute)
+    pontos = pontos - pontos_perdidos
+
+*Função round*
+
+O Python 3 usa Banker's rounding. Nessa forma, os valores são arredondados para o número que for mais próximo, por exemplo: 2.4 seria arredondado para 2, todavia 2.6 já seria arredondado para 3. Quando um valor é igualmente próximo de dois números, por exemplo 2.5, que possui 0.5 de diferença tanto para o número 2 quanto para o número 3, esse é arredondado para o valor par mais próximo, que, nesse caso, seria o número 2. 
+Vale lembrar que somente os números x.5 recebem o tratamento "especial" do arredondamento para o valor par mais próximo, nos demais, o arredondamento ocorre conforme esperado.
+
+Mais informações se encontram na documentação do Python 3: https://docs.python.org/3.5/library/functions.html#round
+
+### Divisão de float e interger
+
+O operador / sempre traz um float, mesmo se não for necessário, por isso ele também é chamado de float division:
+
+    divisao = 3 / 2
+    print(divisao)
+    1.5
+    type(divisao)
+    <class 'float'>
+
+O operador // também é chamado integer division e sempre devolve o valor inteiro (sem arredondar).
+
+    divisao = 3 // 2
+    print(divisao)
+    1
+    type(divisao)
+    <class 'int'>
+
+### Melhorando a organização do código
+
+## Importando arquivos dentro de outros
+
+
 

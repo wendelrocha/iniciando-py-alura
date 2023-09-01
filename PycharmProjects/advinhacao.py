@@ -6,8 +6,9 @@ print("************************************")
 print("")
 
 num_secreto = random.randrange(1,101)
-total_tentativas = 3
-rodada = 1 
+total_tentativas = 0
+pontos = 1000
+#rodada = 1 # usando o loop for, não é necessário atribuir valor a essa variavel
 
 print("Escolha um nível de difuldade.")
 print("Digite (1) para Fácil - (2) para Médio - (3) para Dificil")
@@ -47,7 +48,7 @@ for rodada in range(1,total_tentativas + 1):
     menor = chute < num_secreto
  
     if(acertou):
-        print("Você acertou")
+        print("Você acertou e fez {} pontos!".format(pontos))
         print("")
         print("Meus Parabéns!!")
         print("")
@@ -55,10 +56,14 @@ for rodada in range(1,total_tentativas + 1):
     else:
         if (maior):
             print("")
-            print("Errou! Seu palpite foi mais alto do que num secreto")
+            print("Errou! Seu palpite foi maior do que num secreto")            
         elif (menor):
             print("")
-            print("Errou! Seu palpite foi mais baixo do que num secreto")
+            print("Errou! Seu palpite foi menor do que num secreto")            
+        pontos_perdidos = abs(num_secreto - chute)
+        pontos = pontos - pontos_perdidos
         print("")
-    rodada = rodada + 1
+        
+    #rodada = rodada + 1 # não é necessário incrementar essa variável, pois esta usando o loop for.
+print("O número secreto era: {}. Você fez {} pontos".format(num_secreto,pontos))
 print("Game Over!!!")
