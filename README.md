@@ -500,9 +500,9 @@ O operador // também é chamado integer division e sempre devolve o valor intei
     type(divisao)
     <class 'int'>
 
-### Melhorando a organização do código
+## 08. Melhorando a organização do código
 
-## Importando arquivos dentro de outros
+### Importando arquivos dentro de outros
 
 Dentro do diretório do projeto jogos, basta executar:
 
@@ -513,7 +513,7 @@ Se quiser ter um menu com vários jogos (ou sistemas), devemos importar arquivos
     import forca
     import adivinhacao
 
-## Criando funções e declarando funções
+### Criando funções e declarando funções
 
 Porém é necessário colocar condições para isso, caso contrário, ele executa o arquivo forca.py e logo depois o adivinhacao.py.
 Para isso é necessário definir nosso código como uma função, antes de chama-los em outro arquivo:
@@ -534,7 +534,7 @@ Para isso é necessário definir nosso código como uma função, antes de chama
 
 Importante: Para declarar uma função, devemos usar a palavra chave def do Python, lembrando de usar o padrão *snake_case* para nomeá-la. 
 
-## Importando funções
+### Importando funções
 
 Agora sim podemos chamar as funções: 
 
@@ -548,7 +548,7 @@ Agora sim podemos chamar as funções:
 
 Repare que uma função pode chamar uma outra função. print também é uma função e usamos ela dentro da nossa própria função, sempre identando c/ um TAB para o funcionamento.
 
-## Parâmetros e retorno
+### Parâmetros e retorno
 
 Uma função também pode receber parâmetros e retornar algum valor, por exemplo:
 
@@ -557,4 +557,28 @@ Uma função também pode receber parâmetros e retornar algum valor, por exempl
 
 A função soma recebe dois parâmetros (a e b) e retorna a soma. Ao chamar a função, podemos capturar o retorno:
     s = soma(3, 4)
+
+## 09. Comparando Python com C
+
+### Python vs C
+
+O Python é uma linguagem interpretada e o C é uma liguagem compilada. 
+
+O Python é muito mais simples:
+
+* Não obriga importar módulos(para funções) básicos
+* Não precisa definir a função main
+* Não precisa definir a tipagem, cria a variável e atribui valor para ser 
+* Não precisa colocar ponto-vírgula
+* Nâo precisa abrir blocos {} de if else, por exemplo
+* O Python é portável, basta enviar o arquivo e executa-lo onde o Python esteja instalado. 
+
+No caso do C, é necessário compilar o código em C, para que seja gera um arquivo executável, que por fim possa ser executado. 
+Para ser executado não é simplesmente só enviar o arquivo compilado/executado. É necessário compilar novamente. 
+
+O que é o __pycache__
+
+É como se fossem os arquivos "compilados" em tempo de execução para que possa ser executado (compilando os módulos) de forma mais rápida. 
+Porém, o Python é meio que hibrida, pois usa esses arquivos sempre que necessário para melhorar o desempenho.
+
 
