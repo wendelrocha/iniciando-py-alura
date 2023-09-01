@@ -504,5 +504,57 @@ O operador // também é chamado integer division e sempre devolve o valor intei
 
 ## Importando arquivos dentro de outros
 
+Dentro do diretório do projeto jogos, basta executar:
 
+    python3 adivinhacao.py
+
+Se quiser ter um menu com vários jogos (ou sistemas), devemos importar arquivos (que devem estar no mesmo diretório):
+
+    import forca
+    import adivinhacao
+
+## Criando funções e declarando funções
+
+Porém é necessário colocar condições para isso, caso contrário, ele executa o arquivo forca.py e logo depois o adivinhacao.py.
+Para isso é necessário definir nosso código como uma função, antes de chama-los em outro arquivo:
+
+    # forca.py
+    
+    def jogar():
+
+    # resto do código omitido... 
+
+    # adivinhacao.py
+    
+    import random
+
+    def jogar():
+
+    # resto do código omitido... 
+
+Importante: Para declarar uma função, devemos usar a palavra chave def do Python, lembrando de usar o padrão *snake_case* para nomeá-la. 
+
+## Importando funções
+
+Agora sim podemos chamar as funções: 
+
+    # jogos.py
+
+    import forca
+    import adivinhacao
+
+    forca.jogar()
+    adivinhacao.jogar()
+
+Repare que uma função pode chamar uma outra função. print também é uma função e usamos ela dentro da nossa própria função, sempre identando c/ um TAB para o funcionamento.
+
+## Parâmetros e retorno
+
+Uma função também pode receber parâmetros e retornar algum valor, por exemplo:
+
+    def soma(a, b):
+        return a + b
+
+A função soma recebe dois parâmetros (a e b) e retorna a soma. Ao chamar a função, podemos capturar o retorno:
+    s = soma(3, 4)
 
