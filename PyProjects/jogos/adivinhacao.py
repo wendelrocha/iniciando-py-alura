@@ -26,11 +26,12 @@ def jogar():
 
     print("###### PENSE EM NÚMERO DE 1 A 100")
 
-    print(num_secreto)
+    #print(num_secreto)
 
     #Substituindo while por for
     #while(rodada <= total_tentativas):
     for rodada in range(1,total_tentativas + 1):
+        print("")
         print("Rodada {} de {} : " .format(rodada, total_tentativas))
         print("")
 
@@ -57,20 +58,22 @@ def jogar():
         else:
             if (maior):
                 print("")
-                print("Errou! Seu palpite foi maior do que num secreto")            
+                print("Errou! Seu palpite foi maior do que num secreto")                
+                print("")
             elif (menor):
                 print("")
                 print("Errou! Seu palpite foi menor do que num secreto")            
+                print("")
             pontos_perdidos = abs(num_secreto - chute)
             pontos = pontos - pontos_perdidos
+            perdidos_total = abs(pontos - 1000)
+        if (rodada == total_tentativas):
             print("")
-            
+            print("O número secreto era: {}. Você perdeu {} pontos".format(num_secreto,perdidos_total))            
+            print("")            
         #rodada = rodada + 1 # não é necessário incrementar essa variável, pois esta usando o loop for.
     print("")
-
-#if(rodada == total_tentativas):
-
-    print("O número secreto era: {}. Você fez {} pontos".format(num_secreto,pontos))
+   
 print("Game Over!!!")
 
 if(__name__ == "__main__"):
