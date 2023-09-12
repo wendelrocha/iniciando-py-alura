@@ -139,6 +139,71 @@ else:
 
 # Usando a função abs
 
-pontos_perdidos = (21 - 32) / 3
-print("Pontos perdidos: {:7.2f}".format(pontos_perdidos))
+""""pontos_perdidos = (21 - 32) / 3
+print("Pontos perdidos: {:7.2f}".format(pontos_perdidos))"""
 
+# Usando indices
+
+"""numeros = [10, 20, 30, 40, 50]
+
+for i in range(len(numeros)):
+    print("O elemento na posição", i, "é", numeros[i])
+
+
+frase = "Olá, mundo!"
+
+for i in range(len(frase)):
+    print("O caractere na posição", i, "é", frase[i])"""
+
+# Função count em listas, usa-se colchetes
+# A função del também é uma função built-in, mas só funciona para sequências mutáveis como listas. 
+
+"""valores = [ 0, 0, 0, 1, 2, 3, 4]
+print(valores.count(4))"""
+
+# Usando tuplas (são imutáveis), usa-se parenteses. Também são imutáveis as sequências do tipo str e range
+# Funções built-ins: len, min e max, funcionam em listas imutáveis como as tuplas. 
+
+"""dias = ("Seg", "Terça", "Quarta", "Quinta", "Sexta", "Sábado", "Domingo")
+print(len(dias))
+print(dias)
+print(dias[3])"""
+
+# Converter lista em tupla e vice versa
+
+"""instrutor1 = ("Nico", 39)
+instrutor2 = ("Flávio", 37)
+
+instrutor1 = ("Nico", 39)
+instrutor2 = ("Flávio", 37)
+instrutores = [instrutor1, instrutor2]
+
+print(instrutores)
+
+print(instrutores[0][1])
+
+linhas = []
+linhas.append("linha 1")
+linhas.append("linha 2")
+linhas.append("linha 3")
+
+linhas_tuple = tuple(linhas)
+type(linhas_tuple)
+
+print(linhas_tuple)
+
+linhas_list = list(linhas_tuple)
+type(linhas_list)
+
+print(linhas_list)"""
+
+# Usando set, não permite-se valores duplicados 
+# Set não usa índices para identificar a posição, é uma coleção não ordenada de elementos. 
+
+"""colecao = {11122233344, 22233344455, 33344455566}
+colecao.add(44455566677) #vai adicionar pois não existe ainda"""
+
+# Usando dictionary, é como um set mas sempre em pares de infos. 
+
+instrutores = {'Nico' : 39, 'Flavio': 37, 'Marcos' : 30}
+print(instrutores['Flavio'])
