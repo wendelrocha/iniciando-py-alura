@@ -205,5 +205,107 @@ colecao.add(44455566677) #vai adicionar pois não existe ainda"""
 
 # Usando dictionary, é como um set mas sempre em pares de infos. 
 
-instrutores = {'Nico' : 39, 'Flavio': 37, 'Marcos' : 30}
-print(instrutores['Flavio'])
+"""instrutores = {'Nico' : 39, 'Flavio': 37, 'Marcos' : 30}
+print(instrutores['Flavio'])"""
+
+# Contando letras 
+""""frase = "Python rocks!"
+print(len(frase))"""
+
+# Saindo do Loop usando break
+"""def jogar():
+    print("*********************************")
+    print("***Bem vindo ao jogo da Forca!***")
+    print("*********************************")
+
+    palavra_secreta = "maça".upper()
+    letras_acertadas = ["_", "_", "_", "_"]
+
+
+    erros = 0
+    print(len(palavra_secreta))
+    print(letras_acertadas)
+
+    while(True):
+
+        chute = input("Qual letra? ")
+        chute = chute.strip().upper()
+
+        if(chute in palavra_secreta):
+            index = 0
+            for letra in palavra_secreta:
+                if(chute == letra):
+                    letras_acertadas[index] = letra
+                index += 1
+        else:
+            erros += 1
+
+        if (erros == 6):
+            break
+        if ("_" not in letras_acertadas):
+            break
+        print(letras_acertadas)
+
+
+    if("_" not in letras_acertadas):
+        print("Você ganhou!!")
+    else:
+        print("Você perdeu!!")
+    print("Fim do jogo")"""
+
+# Compreensão de listas (List Comprehension)
+"""palavra_secreta = "banana".upper()
+letras_acertadas = ["_" for letra in palavra_secreta]
+print(letras_acertadas)
+
+frutas = ["maçã", "banana", "laranja", "melancia"]
+lista = [fruta.upper() for fruta in frutas]
+print(lista)
+
+inteiros = [1,3,4,5,7,8]
+print(inteiros)
+
+pares = [x for x in inteiros if x % 2 == 0]
+print(pares)"""
+
+# Escrita em um arquivo 
+
+"""arquivo = open("palavras.txt", "w")
+arquivo.write("banana")
+arquivo.write("melancia")
+arquivo.close()
+arquivo = open("words.txt", "a")
+arquivo.write("morango\n")
+arquivo.write("manga\n")
+arquivo.close()"""
+
+# Leitura de um arquivo
+
+"""arquivo = open("palavras.txt", "r")
+for linha in arquivo:
+    print(linha)"""
+
+# Leitura de um arquivo, linha por linha
+
+"""arquivo = open("words.txt", "r")
+linha = arquivo.readlines()
+print(linha)"""
+
+# Sintaxe especial para abrir arquivo (mesmo que não tenha sido fechado)
+
+""""arquivo = open("words.txt", "w")
+arquivo.write("Botafogo\n")
+arquivo.write("Campeão\n")
+arquivo = open("words.txt", "a")
+arquivo.write("Brasileiro\n")
+arquivo.write("2023\n")
+#arquivo.close()
+
+with open("words.txt") as arquivo:
+    for line in arquivo:
+        print(line)"""
+
+# 
+
+
+
